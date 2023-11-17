@@ -14,8 +14,6 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTouch(_:)))
-        
         // 1. Gesture Recognizer
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
         view.addGestureRecognizer(panGesture)
@@ -43,13 +41,5 @@ final class ViewController: UIViewController {
         pointLabel.text = "x: \(Int(now.x)), y: \(Int(now.y))"
         
         mainLabel.text = previous.x < now.x ? "오른쪽" : "왼쪽"
-    }
-    
-    @objc private func didTouch(_ tapGestureRecognizer: UITapGestureRecognizer) {
-        print(">>> : \(#function)")
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print(">>> : \(#function)")
     }
 }
