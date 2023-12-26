@@ -5,7 +5,7 @@
 
 import UIKit
 
-class UserSaveViewController: UIViewController {
+final class UserSaveViewController: UIViewController {
     @IBOutlet weak var userTextField: UITextField!
     
     weak var userDataDelegate: (any CoreDataManagable<User>)? = nil

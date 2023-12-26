@@ -4,11 +4,15 @@
 //
 
 import UIKit
+import CoreData
 
-class UserListViewController: UIViewController {
+final class UserListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var users: [User] = []
+    
+    // 코어 데이터 컨테이너 선언
+    var container: NSPersistentContainer!
     
     override func viewDidLoad() {
         super.viewDidLoad()

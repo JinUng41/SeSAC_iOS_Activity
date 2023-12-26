@@ -5,7 +5,7 @@
 
 import UIKit
 
-class JokeListViewController: UIViewController {
+final class JokeListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var jokeDataDelegate: (any CoreDataManagable<Joke>)? = nil

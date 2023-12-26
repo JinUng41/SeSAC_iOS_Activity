@@ -5,7 +5,7 @@
 
 import UIKit
 
-class JokeTabBarController: UITabBarController {
+final class JokeTabBarController: UITabBarController {
     var currentUser: User
     
     init?(user: User, coder: NSCoder) {
