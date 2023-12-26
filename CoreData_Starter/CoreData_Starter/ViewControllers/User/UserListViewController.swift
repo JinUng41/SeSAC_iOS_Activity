@@ -12,7 +12,7 @@ final class UserListViewController: UIViewController {
     var users: [User] = []
     
     // 코어 데이터 컨테이너 선언
-    var container: NSPersistentContainer!
+    var container: NSPersistentContainer = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
     
     override func viewDidLoad() {
         super.viewDidLoad()

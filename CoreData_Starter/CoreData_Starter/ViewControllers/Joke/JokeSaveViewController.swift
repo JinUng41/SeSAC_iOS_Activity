@@ -5,7 +5,7 @@
 
 import UIKit
 
-class JokeSaveViewController: UIViewController {
+final class JokeSaveViewController: UIViewController {
     @IBOutlet weak var categorySegmentedControl: UISegmentedControl!
     @IBOutlet weak var jokeTextField: UITextField!
     
