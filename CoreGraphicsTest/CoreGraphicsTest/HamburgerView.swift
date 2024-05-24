@@ -28,7 +28,6 @@ final class HamburgerView: UIView {
         drawRectBread()
     }
     
-    
     private func drawRoundBread() {
         let breadPath = UIBezierPath()
         breadPath.lineWidth = 10

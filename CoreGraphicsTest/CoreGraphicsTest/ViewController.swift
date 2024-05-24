@@ -51,3 +51,7 @@ final class ViewController: UIViewController {
 
 }
 
+UITableViewDelegate {
+    
+}
+
